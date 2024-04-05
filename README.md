@@ -68,3 +68,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### NOTES TO MYSELF
+propType is a built-in system for making code more robust. First you import propTypes from prop-types. The we set the component.propTypes to an object, just like the default props object. If you then supply a different datatype as default props, you get a warning, just like typescript (catches errors before they happen). We can also make it required
+
+# Styling
+We can style React components inline using an object and passing it into a 'style' attribute in key-value pairs. We can also use a named object and pass it into the style attribute
+
+# REACT ICONS
+We can use font awesome cdn in our html file but we can install reacticons library in your project to be able to access built in icons that come with react. We use
+### npm i react-icons
+
+# JSON-SERVER
+There is a tool called 'json-server' that allows us to create our own mock restAPI with our own data. We can use it from the web using npx and directly add our port number in a new terminal. This is obviously after creating the data folder in the root, the holds the .json file which we can then access in our components
+
+### npx json-server -p 5000 -w data/db.json
+
+To load up the data here, we can do the data fetch in another hook called useEffect. This hook runs a function after an effect happens or takes place and can also take in a 'dependency array' which holds the value or state or entity whose change causes the useEffect to happen
+
+# ROUTING
+
+We use routing by installing a package called react-router-dom
+
+### npm i react-router-dom
+
